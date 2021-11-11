@@ -6,6 +6,8 @@ import Image from "next/image";
 import Facebook from "../../assets/socials/facebook.svg";
 import Instagram from "../../assets/socials/instagram.svg";
 import YouTube from "../../assets/socials/youtube.svg";
+import { MenuAlt3Icon } from "@heroicons/react/solid";
+import { XIcon } from "@heroicons/react/solid";
 
 const NavBar = ({ bg }) => {
   return (
@@ -68,8 +70,10 @@ const FullNav = ({ bg }) => (
 );
 
 const HamburgerNav = ({ bg }) => (
-  <nav className="lg:hidden">
-    <h1>Mobile Nav</h1>
+  <nav className="lg:hidden flex justify-between">
+    <h1>Yogesh Samsi</h1>
+    <XIcon />
+    <MenuAlt3Icon />
   </nav>
 );
 
