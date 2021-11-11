@@ -20,9 +20,9 @@ const NavBar = ({ bg }) => {
 };
 
 const FullNav = ({ bg }) => (
-  <nav className={`sticky top-0 left-0 bg-dark-30 w-full text-light 2xl:text-xl xl:text-lg lg:text-lg lgmax:hidden`}>
+  <nav className={`fixed top-0 left-0 bg-dark-30 w-full text-light 2xl:text-xl xl:text-lg lg:text-lg lgmax:hidden`}>
     <div className="max-w-[80%] mx-auto py-4 flex justify-between items-center">
-      <div className="w-[60%] flex justify-between">
+      <div className="flex justify-between space-x-6">
         <Link href="/">
           <a> Home</a>
         </Link>
@@ -43,7 +43,7 @@ const FullNav = ({ bg }) => (
         </Link>
       </div>
 
-      <div className="xl:w-[10%] lg:w-[12%] flex justify-between items-center">
+      <div className="flex justify-between items-center space-x-4">
         <a href="https://fb.me/PanditYogeshSamsi">
           <div className="w-8 h-8 lg:w-7 lg:h7">
             <Image src={Facebook} alt="Yogesh Samsi Facebook Page (Facebook Logo)" target="_blank" className="image" />
