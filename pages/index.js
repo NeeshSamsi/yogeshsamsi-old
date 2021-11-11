@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <HeadComponent />
 
-      <NavBar bg="dark-30" />
+      <NavBar bg="bg-dark-30" />
 
       <main></main>
     </>

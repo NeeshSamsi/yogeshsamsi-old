@@ -9,14 +9,16 @@ import Image from "next/image";
 import Facebook from "../../assets/socials/facebook.svg";
 import Instagram from "../../assets/socials/instagram.svg";
 import YouTube from "../../assets/socials/youtube.svg";
-import { MenuIcon } from "@heroicons/react/outline";
-import { XIcon } from "@heroicons/react/outline";
 
 const NavBar = ({ bg }) => {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
 
+  const handleHamburgerClick = () => {
+    setIsHamburgerOpen((prevHamburgerState) => !prevHamburgerState);
+  };
+
   return (
-    <nav className={`fixed top-0 left-0 bg-${bg} w-full py-2 md:py-4 text-light  lg:text-lg 2xl:text-xl`}>
+    <nav className={`fixed top-0 left-0 ${bg} w-full py-2 md:py-4 text-light  lg:text-lg 2xl:text-xl`}>
       {/* main nav container */}
       {/* mobile mw-90%, 90% | desktop mw-80%, {TBD} */}
       <div className="max-w-[80%] mx-auto flex justify-between items-center">
@@ -84,11 +86,22 @@ const NavBar = ({ bg }) => {
           </a>
         </div>
         {/* mobile hamburger */}
-        {isHamburgerOpen ? (
+        {/* {isHamburgerOpen ? (
           <XIcon className="block md:hidden w-8 h-8" />
         ) : (
           <MenuIcon className="block md:hidden w-8 h-8" />
-        )}
+        )} */}
+
+        <button onClick={handleHamburgerClick}>
+          <div
+            className={`tham ${isHamburgerOpen ? "tham-active" : ""} tham-e-squeeze display md:hidden tham-w-6
+          8`}
+          >
+            <div className="tham-box">
+              <div className="tham-inner bg-light" />
+            </div>
+          </div>
+        </button>
       </div>
     </nav>
   );
