@@ -1,6 +1,3 @@
-// NEXT
-import Head from "next/head";
-
 // Components
 import HeadComponent from "../components/HeadComponent";
 import NavBar from "../components/NavBar";
