@@ -9,9 +9,9 @@ import YouTube from "../../assets/socials/youtube.svg";
 
 const NavBar = ({ bg }) => {
   return (
-    <nav className={`bg-${bg} w-full`}>
-      <div className="max-w-[80%] mx-auto flex justify-between">
-        <div>
+    <nav className={`sticky top-0 left-0 bg-${bg} w-full text-light text-xl`}>
+      <div className="max-w-[80%] mx-auto py-4 flex justify-between items-center">
+        <div className="w-[50%] flex justify-between">
           <Link href="/">
             <a> Home</a>
           </Link>
@@ -31,20 +31,37 @@ const NavBar = ({ bg }) => {
             <a> Contact</a>
           </Link>
         </div>
-        <div>
+
+        <div className="w-[10%] flex justify-between items-center">
           <a href="https://fb.me/PanditYogeshSamsi">
-            <Image src={Facebook} alt="Yogesh Samsi Facebook Page (Facebook Logo)" target="_blank" className="image" />
+            <div className="w-8 h-8">
+              <Image
+                src={Facebook}
+                alt="Yogesh Samsi Facebook Page (Facebook Logo)"
+                target="_blank"
+                className="image"
+              />
+            </div>
           </a>
           <a href="https://instagram.com/yogesh.samsi">
-            <Image
-              src={Instagram}
-              alt="Yogesh Samsi Instgram Account (Instagram Logo)"
-              target="_blank"
-              className="image"
-            />
+            <div className="w-8 h-8">
+              <Image
+                src={Instagram}
+                alt="Yogesh Samsi Instgram Account (Instagram Logo)"
+                target="_blank"
+                className="image"
+              />
+            </div>
           </a>
           <a href="https://youtube.com/YogeshSamsiOfficial">
-            <Image src={YouTube} alt="Yogesh Samsi YouTube Channel (YouTube Logo)" target="_blank" className="image" />
+            <div className="w-8 h-8">
+              <Image
+                src={YouTube}
+                alt="Yogesh Samsi YouTube Channel (YouTube Logo)"
+                target="_blank"
+                className="image"
+              />
+            </div>
           </a>
         </div>
       </div>
