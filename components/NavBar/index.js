@@ -21,41 +21,41 @@ const NavBar = ({ theme }) => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 bg-${background} w-full py-2 md:py-4 text-${foreground}  lg:text-lg 2xl:text-xl`}
+      className={`fixed top-0 left-0 bg-${background} w-full py-2 px-[10%] md:py-4 text-${foreground}  lg:text-lg 2xl:text-xl`}
     >
-      {/* main nav container */}
-      {/* mobile mw-90%, 90% | desktop mw-80%, {TBD} */}
-      <div className="max-w-[80%] mx-auto flex justify-between items-center">
+      {/* inner nav container */}
+      <div className="mx-auto flex justify-between items-center">
         {/* LEFT */}
         {/* desktop links */}
         <div className="hidden md:flex justify-between md:space-x-4 lg:space-x-6">
           <Link href="/">
-            <a> Home</a>
+            <a>Home</a>
           </Link>
           <Link href="/">
-            <a> About</a>
+            <a>About</a>
           </Link>
           <Link href="/">
-            <a> Gallery</a>
+            <a>Gallery</a>
           </Link>
           <Link href="/">
-            <a> Schedule</a>
+            <a>Schedule</a>
           </Link>
           <Link href="/">
-            <a> SaathSangath</a>
+            <a>SaathSangath</a>
           </Link>
           <Link href="/">
-            <a> Contact</a>
+            <a>Contact</a>
           </Link>
         </div>
+
         {/* mobile logo font */}
         <Link href="/">
           <a>
-            <h1 className="block md:hidden font-serif font-bold text-xl">Yogesh Samsi</h1>
+            <h1 className="block md:hidden font-serif font-bold text-2xl">Yogesh Samsi</h1>
           </a>
         </Link>
 
-        {/* LEFT */}
+        {/* RIGHT */}
         {/* destop socials */}
         <div className="hidden md:flex justify-between items-center md:space-x-2 lg:space-x-4">
           <a href="https://fb.me/PanditYogeshSamsi">
@@ -89,17 +89,75 @@ const NavBar = ({ theme }) => {
             </div>
           </a>
         </div>
+
         {/* mobile hamburger */}
         <button onClick={handleHamburgerClick}>
-          <div
-            className={`tham ${isHamburgerOpen ? "tham-active" : ""} tham-e-squeeze display md:hidden tham-w-6
-          8`}
-          >
+          <div className={`tham ${isHamburgerOpen ? "tham-active" : ""} tham-e-squeeze display md:hidden tham-w-6`}>
             <div className="tham-box">
               <div className={`tham-inner bg-${foreground}`} />
             </div>
           </div>
         </button>
+      </div>
+
+      {/* hamburger menu */}
+      <div
+        className={`${isHamburgerOpen ? "block" : "hidden"} md:hidden mx-auto py-10 flex flex-col space-y-6 text-lg`}
+      >
+        {/* mobile links */}
+        <div className="flex flex-col space-y-6">
+          <Link href="/">
+            <a className="block">Home</a>
+          </Link>
+          <Link href="/">
+            <a className="block">About</a>
+          </Link>
+          <Link href="/">
+            <a className="block">Gallery</a>
+          </Link>
+          <Link href="/">
+            <a className="block">Schedule</a>
+          </Link>
+          <Link href="/">
+            <a className="block">SaathSangath</a>
+          </Link>
+          <Link href="/">
+            <a className="block">Contact</a>
+          </Link>
+        </div>
+        {/* mobile socials */}
+        <div className="flex md:hidden space-x-4">
+          <a href="https://fb.me/PanditYogeshSamsi">
+            <div className="w-8 h-8 md:w-6 md:h-6 lg:w-7 lg:h-7">
+              <Image
+                src={Facebook}
+                alt="Yogesh Samsi Facebook Page (Facebook Logo)"
+                target="_blank"
+                className="image"
+              />
+            </div>
+          </a>
+          <a href="https://instagram.com/yogesh.samsi">
+            <div className="w-8 h-8 md:w-6 md:h-6 lg:w-7 lg:h-7">
+              <Image
+                src={Instagram}
+                alt="Yogesh Samsi Instgram Account (Instagram Logo)"
+                target="_blank"
+                className="image"
+              />
+            </div>
+          </a>
+          <a href="https://youtube.com/YogeshSamsiOfficial">
+            <div className="w-8 h-8 md:w-6 md:h-6 lg:w-7 lg:h-7">
+              <Image
+                src={YouTube}
+                alt="Yogesh Samsi YouTube Channel (YouTube Logo)"
+                target="_blank"
+                className="image"
+              />
+            </div>
+          </a>
+        </div>
       </div>
     </nav>
   );
