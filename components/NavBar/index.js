@@ -10,15 +10,19 @@ import Facebook from "../../assets/socials/facebook.svg";
 import Instagram from "../../assets/socials/instagram.svg";
 import YouTube from "../../assets/socials/youtube.svg";
 
-const NavBar = ({ bg }) => {
+const NavBar = ({ theme }) => {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
 
-  const handleHamburgerClick = () => {
+  const { background, foreground } = theme;
+
+  const handleHamburgerClick = ({}) => {
     setIsHamburgerOpen((prevHamburgerState) => !prevHamburgerState);
   };
 
   return (
-    <nav className={`fixed top-0 left-0 ${bg} w-full py-2 md:py-4 text-light  lg:text-lg 2xl:text-xl`}>
+    <nav
+      className={`fixed top-0 left-0 bg-${background} w-full py-2 md:py-4 text-${foreground}  lg:text-lg 2xl:text-xl`}
+    >
       {/* main nav container */}
       {/* mobile mw-90%, 90% | desktop mw-80%, {TBD} */}
       <div className="max-w-[80%] mx-auto flex justify-between items-center">
@@ -92,7 +96,7 @@ const NavBar = ({ bg }) => {
           8`}
           >
             <div className="tham-box">
-              <div className="tham-inner bg-light" />
+              <div className={`tham-inner bg-${foreground}`} />
             </div>
           </div>
         </button>
