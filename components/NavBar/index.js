@@ -86,12 +86,6 @@ const NavBar = ({ bg }) => {
           </a>
         </div>
         {/* mobile hamburger */}
-        {/* {isHamburgerOpen ? (
-          <XIcon className="block md:hidden w-8 h-8" />
-        ) : (
-          <MenuIcon className="block md:hidden w-8 h-8" />
-        )} */}
-
         <button onClick={handleHamburgerClick}>
           <div
             className={`tham ${isHamburgerOpen ? "tham-active" : ""} tham-e-squeeze display md:hidden tham-w-6
