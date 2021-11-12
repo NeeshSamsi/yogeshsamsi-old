@@ -21,7 +21,7 @@ const NavBar = ({ theme }) => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 bg-${background} w-full py-2 px-[10%] md:py-4 text-${foreground}  lg:text-lg 2xl:text-xl`}
+      className={`fixed top-0 left-0 bg-${background} w-full py-4 px-[10%] md:py-6 text-${foreground}  lg:text-lg 2xl:text-xl`}
     >
       {/* inner nav container */}
       <div className="mx-auto flex justify-between items-center">
@@ -31,19 +31,19 @@ const NavBar = ({ theme }) => {
           <Link href="/">
             <a>Home</a>
           </Link>
-          <Link href="/">
+          <Link href="/about">
             <a>About</a>
           </Link>
-          <Link href="/">
+          <Link href="/gallery">
             <a>Gallery</a>
           </Link>
-          <Link href="/">
+          <Link href="/schedule">
             <a>Schedule</a>
           </Link>
-          <Link href="/">
+          <Link href="/saathsangath">
             <a>SaathSangath</a>
           </Link>
-          <Link href="/">
+          <Link href="/contact">
             <a>Contact</a>
           </Link>
         </div>
