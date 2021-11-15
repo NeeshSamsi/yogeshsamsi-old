@@ -3,12 +3,9 @@ import { useState } from "react";
 
 // NEXT
 import Link from "next/link";
-import Image from "next/image";
 
-// Images / Icons
-import Facebook from "../../assets/socials/facebook.svg";
-import Instagram from "../../assets/socials/instagram.svg";
-import YouTube from "../../assets/socials/youtube.svg";
+// COMPONENTS
+import Socials from "../Socials";
 
 const NavBar = ({ theme }) => {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
@@ -58,36 +55,7 @@ const NavBar = ({ theme }) => {
         {/* RIGHT */}
         {/* destop socials */}
         <div className="hidden md:flex justify-between items-center md:space-x-2 lg:space-x-4">
-          <a href="https://fb.me/PanditYogeshSamsi">
-            <div className="w-8 h-8 md:w-6 md:h-6 lg:w-7 lg:h-7">
-              <Image
-                src={Facebook}
-                alt="Yogesh Samsi Facebook Page (Facebook Logo)"
-                target="_blank"
-                className="image"
-              />
-            </div>
-          </a>
-          <a href="https://instagram.com/yogesh.samsi">
-            <div className="w-8 h-8 md:w-6 md:h-6 lg:w-7 lg:h-7">
-              <Image
-                src={Instagram}
-                alt="Yogesh Samsi Instgram Account (Instagram Logo)"
-                target="_blank"
-                className="image"
-              />
-            </div>
-          </a>
-          <a href="https://youtube.com/YogeshSamsiOfficial">
-            <div className="w-8 h-8 md:w-6 md:h-6 lg:w-7 lg:h-7">
-              <Image
-                src={YouTube}
-                alt="Yogesh Samsi YouTube Channel (YouTube Logo)"
-                target="_blank"
-                className="image"
-              />
-            </div>
-          </a>
+          <Socials />
         </div>
 
         {/* mobile hamburger */}
@@ -127,36 +95,7 @@ const NavBar = ({ theme }) => {
         </div>
         {/* mobile socials */}
         <div className="flex md:hidden space-x-4">
-          <a href="https://fb.me/PanditYogeshSamsi">
-            <div className="w-8 h-8 md:w-6 md:h-6 lg:w-7 lg:h-7">
-              <Image
-                src={Facebook}
-                alt="Yogesh Samsi Facebook Page (Facebook Logo)"
-                target="_blank"
-                className="image"
-              />
-            </div>
-          </a>
-          <a href="https://instagram.com/yogesh.samsi">
-            <div className="w-8 h-8 md:w-6 md:h-6 lg:w-7 lg:h-7">
-              <Image
-                src={Instagram}
-                alt="Yogesh Samsi Instgram Account (Instagram Logo)"
-                target="_blank"
-                className="image"
-              />
-            </div>
-          </a>
-          <a href="https://youtube.com/YogeshSamsiOfficial">
-            <div className="w-8 h-8 md:w-6 md:h-6 lg:w-7 lg:h-7">
-              <Image
-                src={YouTube}
-                alt="Yogesh Samsi YouTube Channel (YouTube Logo)"
-                target="_blank"
-                className="image"
-              />
-            </div>
-          </a>
+          <Socials />
         </div>
       </div>
     </nav>
