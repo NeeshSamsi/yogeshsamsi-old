@@ -102,7 +102,7 @@ const NavBar = ({ theme }) => {
 
       {/* hamburger menu */}
       <div
-        className={`${isHamburgerOpen ? "block" : "hidden"} md:hidden mx-auto py-10 flex flex-col space-y-6 text-lg`}
+        className={`${isHamburgerOpen ? "block" : "hidden"} md:hidden mx-auto py-10 flex flex-col space-y-8 text-lg`}
       >
         {/* mobile links */}
         <div className="flex flex-col space-y-6">
@@ -126,7 +126,7 @@ const NavBar = ({ theme }) => {
           </Link>
         </div>
         {/* mobile socials */}
-        <div className="flex md:hidden space-x-4">
+        <div className="flex md:hidden space-x-8">
           <a href="https://fb.me/PanditYogeshSamsi">
             <div className="w-8 h-8 md:w-6 md:h-6 lg:w-7 lg:h-7">
               <Image
