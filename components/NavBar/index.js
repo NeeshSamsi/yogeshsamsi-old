@@ -21,7 +21,7 @@ const NavBar = ({ theme }) => {
 
   return (
     <nav
-      className={`sticky top-0 left-0 bg-${background} w-full py-4 px-[10%] md:py-6 text-${foreground}  lg:text-lg 2xl:text-xl`}
+      className={`sticky top-0 left-0 bg-${background} w-full py-4 px-col-all md:py-6 text-${foreground}  lg:text-lg 2xl:text-xl`}
     >
       {/* inner nav container */}
       <div className="mx-auto flex justify-between items-center">

@@ -1,5 +1,5 @@
 module.exports = {
-  mode: "jit",
+  // mode: "jit",
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -23,6 +23,10 @@ module.exports = {
         cream: "#E9C493",
         "dark-30": "rgba(34, 34, 34, 0.3)",
         "dark-50": "rgba(34, 34, 34, 0.5)",
+      },
+      spacing: {
+        "col-all": "10%",
+        "col-main": "20%",
       },
     },
   },
