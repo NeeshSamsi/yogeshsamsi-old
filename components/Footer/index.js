@@ -3,6 +3,7 @@ import Link from "next/link";
 
 // COMPONENTS
 import Socials from "../Socials";
+import TextInput from "../TextInput";
 
 const Footer = () => {
   return (
@@ -10,6 +11,7 @@ const Footer = () => {
       <div className="bg-light p-6 rounded-xl border border-dark">
         <h4 className="text-2xl font-serif font-bold">Join our Mailing List</h4>
         {/* Material UI Name Input */}
+        <TextInput />
         {/* Material UI Email Input */}
         {/* Material UI Submit Button */}
       </div>
