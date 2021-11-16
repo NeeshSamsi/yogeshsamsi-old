@@ -7,27 +7,26 @@ import TextInput from "../TextInput";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-cream flex justify-between flex-wrap py-10 px-col-all">
-      <div className="bg-light p-6 rounded-xl border border-dark">
-        <h4 className="text-2xl font-serif font-bold">Join our Mailing List</h4>
-        {/* Material UI Name Input */}
-        <TextInput label="Name" placeholder="Enter your Name" />
-        <TextInput label="Email" placeholder="Enter your Email" />
-        {/* Material UI Email Input */}
+    <footer className="w-full bg-cream flex flex-col lg:flex-row justify-between space-y-10 lg:-space-y-0 py-10 px-col-all">
+      <div className="flex flex-col justify-between space-y-6 lg:space-y-0 bg-light p-6 rounded-xl border border-dark max-w-sm lg:max-w-none">
+        <h4 className="text-xl lg:text-2xl font-serif font-bold">Join our Mailing List</h4>
+        <TextInput label="Name" placeholder="Enter your Name" clrBg="#F4EDE1" clrFg="#444" clrFgFocus="#222" />
+        <TextInput label="Email" placeholder="Enter your Email" clrBg="#F4EDE1" clrFg="#444" clrFgFocus="#222" />
         {/* Material UI Submit Button */}
+        <button className="bg-dark text-light text-sm lg:text-base font-medium py-2 w-full rounded-md">Join Now</button>
       </div>
 
       <div className="flex flex-col space-y-6">
-        <h4 className="text-2xl font-serif font-bold">Find me here:</h4>
+        <h4 className="text-xl lg:text-2xl font-serif font-bold">Find me here:</h4>
         <div className="flex space-x-4">
           <Socials background="none" foreground="#222222" />
         </div>
-        <a className="underline text-lg" href="mailto:yogeshsamsiofficial@gmail.com">
+        <a className="underline text-base lg:text-lg" href="mailto:yogeshsamsiofficial@gmail.com">
           yogeshsamsiofficial@gmail.com
         </a>
       </div>
 
-      <div className="flex flex-col space-y-4 underline text-lg">
+      <div className="flex flex-col space-y-4 underline text-base lg:text-lg">
         <Link href="/">
           <a className="block">Home</a>
         </Link>
