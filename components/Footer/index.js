@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="flex flex-col space-y-6">
         <h4 className="text-2xl font-serif font-bold">Find me here:</h4>
         <div className="flex space-x-4">
-          <Socials />
+          <Socials background="none" foreground="#222222" />
         </div>
         <a className="underline text-lg" href="mailto:yogeshsamsiofficial@gmail.com">
           yogeshsamsiofficial@gmail.com

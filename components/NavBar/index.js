@@ -55,7 +55,7 @@ const NavBar = ({ theme }) => {
         {/* RIGHT */}
         {/* destop socials */}
         <div className="hidden md:flex justify-between items-center md:space-x-2 lg:space-x-4">
-          <Socials />
+          <Socials background="none" foreground="#F4EDE1" />
         </div>
 
         {/* mobile hamburger */}
@@ -95,7 +95,7 @@ const NavBar = ({ theme }) => {
         </div>
         {/* mobile socials */}
         <div className="flex md:hidden space-x-4">
-          <Socials />
+          <Socials background="none" foreground="#F4EDE1" />
         </div>
       </div>
     </nav>
