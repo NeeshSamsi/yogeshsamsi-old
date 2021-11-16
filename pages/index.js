@@ -8,8 +8,6 @@ const Home = () => {
       <HeadComponent />
 
       <NavBar theme={{ background: "dark", foreground: "light" }} />
-
-      <main></main>
     </>
   );
 };
