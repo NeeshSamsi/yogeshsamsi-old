@@ -1,7 +1,7 @@
 import React from "react";
 // import "./textinput.css";
 
-const TextInput = ({ label, placeholder }) => {
+const TextInput = ({ label, placeholder, clrBg, clrFg, clrFgFocus }) => {
   return (
     <>
       {/* Stackoverflow CSS that I don't understand */}
@@ -12,19 +12,21 @@ const TextInput = ({ label, placeholder }) => {
           }
 
           input {
+            background: ${clrBg};
             font-size: 1rem;
             outline: none;
-            border: 1px solid gray; // color
-            border-radius: 5px;
+            border: 1px solid ${clrFg};
+            border-radius: 6px;
             padding: 0.5rem;
-            color: gray;
+            color: ${clrFg};
             transition: 0.1s ease-out;
+            width: 100%;
           }
           input:focus {
-            border-color: #6200ee;
+            border-color: ${clrFgFocus};
           }
           input:focus + label {
-            color: #6200ee;
+            color: ${clrFgFocus};
             top: 0;
             transform: translateY(-50%) scale(0.9) !important;
           }
@@ -42,9 +44,9 @@ const TextInput = ({ label, placeholder }) => {
             left: 0;
             top: 50%;
             transform: translateY(-50%);
-            background-color: white;
-            color: gray;
-            padding: 0 0.3rem;
+            background-color: ${clrBg};
+            color: ${clrFg};
+            padding: 0 0.5rem;
             margin: 0 0.5rem;
             transition: 0.1s ease-out;
             transform-origin: left top;
