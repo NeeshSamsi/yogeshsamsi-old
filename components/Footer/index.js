@@ -11,7 +11,8 @@ const Footer = () => {
       <div className="bg-light p-6 rounded-xl border border-dark">
         <h4 className="text-2xl font-serif font-bold">Join our Mailing List</h4>
         {/* Material UI Name Input */}
-        <TextInput />
+        <TextInput label="Name" placeholder="Enter your Name" />
+        <TextInput label="Email" placeholder="Enter your Email" />
         {/* Material UI Email Input */}
         {/* Material UI Submit Button */}
       </div>

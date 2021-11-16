@@ -1,7 +1,7 @@
 import React from "react";
 // import "./textinput.css";
 
-const TextInput = () => {
+const TextInput = ({ label, placeholder }) => {
   return (
     <>
       {/* Stackoverflow CSS that I don't understand */}
@@ -54,8 +54,8 @@ const TextInput = () => {
       </style>
 
       <div>
-        <input placeholder="placeholder" type="text" />
-        <label>Name</label>
+        <input placeholder={placeholder} type="text" />
+        <label>{label}</label>
       </div>
     </>
   );
