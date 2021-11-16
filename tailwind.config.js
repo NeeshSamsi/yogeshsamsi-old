@@ -17,10 +17,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        dark: "#222222",
-        light: "#F4EDE1",
-        brown: "#362009",
-        cream: "#E9C493",
+        dark: "var(--color-dark)",
+        light: "var(--color-light)",
+        brown: "var(--color-brown)",
+        cream: "var(--color-cream)",
       },
       spacing: {
         "col-all": "10%",

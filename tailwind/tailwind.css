@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --clr-dark: "#222222";
+  --clr-light: "#F4EDE1";
+  --clr-brown: "#362009";
+  --clr-cream: "#E9C493";
+}
+
 @layer utilities {
   .image {
     width: 100%;
