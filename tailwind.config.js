@@ -21,8 +21,6 @@ module.exports = {
         light: "#F4EDE1",
         brown: "#362009",
         cream: "#E9C493",
-        "dark-30": "rgba(34, 34, 34, 0.3)",
-        "dark-50": "rgba(34, 34, 34, 0.5)",
       },
       spacing: {
         "col-all": "10%",
