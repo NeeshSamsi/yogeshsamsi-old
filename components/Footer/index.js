@@ -9,7 +9,6 @@ const Footer = () => {
   return (
     <footer className="w-full bg-cream flex flex-col lg:flex-row justify-between space-y-10 lg:-space-y-0 py-10 px-col-all">
       <MailingList />
-
       <div className="flex flex-col space-y-6">
         <h4 className="text-xl lg:text-2xl font-serif font-bold">Find me here:</h4>
         <div className="flex space-x-4">
