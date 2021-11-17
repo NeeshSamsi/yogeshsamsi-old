@@ -21,7 +21,7 @@ const NavBar = ({ theme }) => {
       className={`sticky top-0 left-0 bg-${background} w-full py-4 px-col-all md:py-6 text-${foreground}  lg:text-lg 2xl:text-xl`}
     >
       {/* inner nav container */}
-      <div className="mx-auto flex justify-between items-center">
+      <div className=" flex justify-between items-center">
         {/* LEFT */}
         {/* desktop links */}
         <div className="hidden md:flex justify-between md:space-x-4 lg:space-x-6">
@@ -59,8 +59,8 @@ const NavBar = ({ theme }) => {
         </div>
 
         {/* mobile hamburger */}
-        <button onClick={handleHamburgerClick}>
-          <div className={`tham ${isHamburgerOpen ? "tham-active" : ""} tham-e-squeeze display md:hidden tham-w-6`}>
+        <button onClick={handleHamburgerClick} className="md:hidden">
+          <div className={`tham ${isHamburgerOpen ? "tham-active" : ""} tham-e-squeeze display  tham-w-6`}>
             <div className="tham-box">
               <div className={`tham-inner bg-${foreground}`} />
             </div>
