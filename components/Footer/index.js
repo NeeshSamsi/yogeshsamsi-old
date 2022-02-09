@@ -1,25 +1,30 @@
 // NEXT
-import Link from "next/link";
+import Link from "next/link"
 
 // COMPONENTS
-import MailingList from "./Mailing List";
-import Socials from "../Socials";
+import MailingList from "./Mailing List"
+import Socials from "../Socials"
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-cream flex flex-col lg:flex-row justify-between space-y-10 lg:-space-y-0 py-10 px-col-all">
+    <footer className="flex w-full flex-col justify-between space-y-10 bg-cream py-10 px-col-all lg:flex-row lg:-space-y-0">
       <MailingList />
       <div className="flex flex-col space-y-6">
-        <h4 className="text-xl lg:text-2xl font-serif font-bold">Find me here:</h4>
+        <h4 className="font-serif text-xl font-bold lg:text-2xl">
+          Find me here:
+        </h4>
         <div className="flex space-x-4">
           <Socials background="none" foreground="#222222" />
         </div>
-        <a className="underline text-base lg:text-lg" href="mailto:yogeshsamsiofficial@gmail.com">
+        <a
+          className="text-base underline lg:text-lg"
+          href="mailto:yogeshsamsiofficial@gmail.com"
+        >
           yogeshsamsiofficial@gmail.com
         </a>
       </div>
 
-      <div className="flex flex-col space-y-4 underline text-base lg:text-lg">
+      <div className="flex flex-col space-y-4 text-base underline lg:text-lg">
         <Link href="/">
           <a className="block">Home</a>
         </Link>
@@ -40,7 +45,7 @@ const Footer = () => {
         </Link>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

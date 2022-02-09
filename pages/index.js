@@ -1,8 +1,8 @@
 // Components
-import HeadComponent from "../components/HeadComponent";
-import NavBar from "../components/NavBar";
+import HeadComponent from "../components/HeadComponent"
+import NavBar from "../components/NavBar"
 
-import { Hero, About, Schedule, MediaTestimonials } from "../containers/Home";
+import { Hero, About, Schedule, MediaTestimonials } from "../containers/Home"
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
       <Schedule />
       <MediaTestimonials />
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

@@ -4,10 +4,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
-      sm: "640px",
+      xs: "360px",
+      sm: "512px",
       md: "768px",
       lg: "1024px",
-      lgmax: { max: "1023px" },
       xl: "1280px",
       "2xl": "1536px",
     },
@@ -32,4 +32,4 @@ module.exports = {
     extend: {},
   },
   plugins: [require("tailwind-hamburgers")],
-};
+}

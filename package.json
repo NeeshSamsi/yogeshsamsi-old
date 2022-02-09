@@ -16,10 +16,14 @@
     "tailwind-hamburgers": "^1.1.1"
   },
   "devDependencies": {
+    "@types/react": "^17.0.38",
     "autoprefixer": "^10.4.0",
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.3",
     "postcss": "^8.3.11",
-    "tailwindcss": "^2.2.19"
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.6",
+    "tailwindcss": "^2.2.19",
+    "typescript": "^4.5.5"
   }
 }

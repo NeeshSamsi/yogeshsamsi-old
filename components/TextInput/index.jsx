@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 // import "./textinput.css";
 
 const TextInput = ({ label, placeholder, clrBg, clrFg, clrFgFocus }) => {
@@ -60,7 +60,7 @@ const TextInput = ({ label, placeholder, clrBg, clrFg, clrFgFocus }) => {
         <label>{label}</label>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default TextInput;
+export default TextInput

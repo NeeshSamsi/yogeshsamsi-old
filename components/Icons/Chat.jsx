@@ -1,8 +1,14 @@
-import React from "react";
+import React from "react"
 
 const Chat = ({ background, foreground }) => {
   return (
-    <svg width="20" height="22" viewBox="0 0 20 22" fill={background} xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width="20"
+      height="22"
+      viewBox="0 0 20 22"
+      fill={background}
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M2 16.9595H4V21.0405L9.101 16.9595H14C15.103 16.9595 16 16.0625 16 14.9595V6.9595C16 5.8565 15.103 4.9595 14 4.9595H2C0.897 4.9595 0 5.8565 0 6.9595V14.9595C0 16.0625 0.897 16.9595 2 16.9595Z"
         fill={foreground}
@@ -12,7 +18,7 @@ const Chat = ({ background, foreground }) => {
         fill={foreground}
       />
     </svg>
-  );
-};
+  )
+}
 
-export default Chat;
+export default Chat

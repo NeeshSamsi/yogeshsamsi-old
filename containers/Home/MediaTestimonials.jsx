@@ -1,7 +1,7 @@
-import React from "react";
+import React from "react"
 
 const MediaTestimonials = () => {
-  return <main>Testimonials</main>;
-};
+  return <main>Testimonials</main>
+}
 
-export default MediaTestimonials;
+export default MediaTestimonials

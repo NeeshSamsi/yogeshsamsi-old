@@ -1,30 +1,30 @@
 // REACT
-import { useState } from "react";
+import { useState } from "react"
 
 // NEXT
-import Link from "next/link";
+import Link from "next/link"
 
 // COMPONENTS
-import Socials from "../Socials";
+import Socials from "../Socials"
 
 const NavBar = ({ theme }) => {
-  const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
+  const [isHamburgerOpen, setIsHamburgerOpen] = useState(false)
 
-  const { background, foreground } = theme;
+  const { background, foreground } = theme
 
   const handleHamburgerClick = ({}) => {
-    setIsHamburgerOpen((prevHamburgerState) => !prevHamburgerState);
-  };
+    setIsHamburgerOpen((prevHamburgerState) => !prevHamburgerState)
+  }
 
   return (
     <nav
-      className={`sticky top-0 left-0 bg-${background} w-full py-4 px-col-all md:py-6 text-${foreground}  lg:text-lg 2xl:text-xl z-50`}
+      className={`sticky top-0 left-0 bg-${background} w-full py-4 px-col-all md:py-6 text-${foreground}  z-50 lg:text-lg 2xl:text-xl`}
     >
       {/* inner nav container */}
-      <div className=" flex justify-between items-center">
+      <div className=" flex items-center justify-between">
         {/* LEFT */}
         {/* desktop links */}
-        <div className="hidden md:flex justify-between md:space-x-4 lg:space-x-6">
+        <div className="hidden justify-between md:flex md:space-x-4 lg:space-x-6">
           <Link href="/">
             <a>Home</a>
           </Link>
@@ -48,19 +48,25 @@ const NavBar = ({ theme }) => {
         {/* mobile logo font */}
         <Link href="/">
           <a>
-            <h1 className="block md:hidden font-serif font-bold text-2xl">Yogesh Samsi</h1>
+            <h1 className="block font-serif text-2xl font-bold md:hidden">
+              Yogesh Samsi
+            </h1>
           </a>
         </Link>
 
         {/* RIGHT */}
         {/* destop socials */}
-        <div className="hidden md:flex justify-between items-center md:space-x-2 lg:space-x-4">
+        <div className="hidden items-center justify-between md:flex md:space-x-2 lg:space-x-4">
           <Socials background="none" foreground="#F4EDE1" />
         </div>
 
         {/* mobile hamburger */}
         <button onClick={handleHamburgerClick} className="md:hidden">
-          <div className={`tham ${isHamburgerOpen ? "tham-active" : ""} tham-e-squeeze display  tham-w-6`}>
+          <div
+            className={`tham ${
+              isHamburgerOpen ? "tham-active" : ""
+            } display tham-e-squeeze  tham-w-6`}
+          >
             <div className="tham-box">
               <div className={`tham-inner bg-${foreground}`} />
             </div>
@@ -70,7 +76,9 @@ const NavBar = ({ theme }) => {
 
       {/* hamburger menu */}
       <div
-        className={`${isHamburgerOpen ? "block" : "hidden"} md:hidden mx-auto py-10 flex flex-col space-y-6 text-lg`}
+        className={`${
+          isHamburgerOpen ? "block" : "hidden"
+        } mx-auto flex flex-col space-y-6 py-10 text-lg md:hidden`}
       >
         {/* mobile links */}
         <div className="flex flex-col space-y-6">
@@ -94,12 +102,12 @@ const NavBar = ({ theme }) => {
           </Link>
         </div>
         {/* mobile socials */}
-        <div className="flex md:hidden space-x-4">
+        <div className="flex space-x-4 md:hidden">
           <Socials background="none" foreground="#F4EDE1" />
         </div>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar

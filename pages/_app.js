@@ -1,5 +1,5 @@
-import Footer from "../components/Footer";
-import "../tailwind/tailwind.css";
+import Footer from "../components/Footer"
+import "../tailwind/tailwind.css"
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <Footer />
     </>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp
