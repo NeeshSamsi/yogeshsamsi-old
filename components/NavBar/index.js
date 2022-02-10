@@ -12,13 +12,27 @@ const NavBar = ({ theme }) => {
 
   const { background, foreground } = theme
 
+  const twDesktopNavBG = `bg-${background}`
+  const twDesktopNavFG = `text-${foreground}`
+  const twHamburgerColor = `bg-${foreground}`
+
+  const socialsColor = "#fff"
+
+  if (background === "darker" || background === "dark") {
+    socialsColor = "#F5E0CC"
+  } else if (background === "light" || background === "lighter") {
+    socialsColor = "#362009"
+  }
+
+  console.log(`Background: ${background}, Foreground: ${socialsColor}`)
+
   const handleHamburgerClick = ({}) => {
     setIsHamburgerOpen((prevHamburgerState) => !prevHamburgerState)
   }
 
   return (
     <nav
-      className={`sticky top-0 left-0 bg-${background} w-full py-4 px-col-all md:py-6 text-${foreground}  z-50 lg:text-lg 2xl:text-xl`}
+      className={`sticky top-0 left-0 ${twDesktopNavBG} w-full py-4 px-col-all md:py-6 ${twDesktopNavFG}  z-50 lg:text-lg 2xl:text-xl`}
     >
       {/* inner nav container */}
       <div className=" flex items-center justify-between">
@@ -57,7 +71,7 @@ const NavBar = ({ theme }) => {
         {/* RIGHT */}
         {/* destop socials */}
         <div className="hidden items-center justify-between md:flex md:space-x-2 lg:space-x-4">
-          <Socials background="none" foreground="#F4EDE1" />
+          <Socials background="none" foreground={socialsColor} />
         </div>
 
         {/* mobile hamburger */}
@@ -68,7 +82,7 @@ const NavBar = ({ theme }) => {
             } display tham-e-squeeze  tham-w-6`}
           >
             <div className="tham-box">
-              <div className={`tham-inner bg-${foreground}`} />
+              <div className={`tham-inner ${twHamburgerColor}`} />
             </div>
           </div>
         </button>
