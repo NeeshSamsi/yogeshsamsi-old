@@ -17,10 +17,10 @@ module.exports = {
     },
     extend: {
       colors: {
+        darker: "#362009",
         dark: "#222222",
-        light: "#F4EDE1",
-        brown: "#362009",
-        cream: "#E9C493",
+        light: "#E0B385",
+        lighter: "#F5E0CC",
       },
       spacing: {
         "col-all": "10%",
