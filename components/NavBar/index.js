@@ -24,8 +24,6 @@ const NavBar = ({ theme }) => {
     socialsColor = "#362009"
   }
 
-  console.log(`Background: ${background}, Foreground: ${socialsColor}`)
-
   const handleHamburgerClick = ({}) => {
     setIsHamburgerOpen((prevHamburgerState) => !prevHamburgerState)
   }
