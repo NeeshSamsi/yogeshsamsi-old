@@ -16,7 +16,7 @@ const NavBar = ({ theme }) => {
   const twDesktopNavFG = `text-${foreground}`
   const twHamburgerColor = `bg-${foreground}`
 
-  const socialsColor = "#fff"
+  let socialsColor
 
   if (background === "darker" || background === "dark") {
     socialsColor = "#F5E0CC"
