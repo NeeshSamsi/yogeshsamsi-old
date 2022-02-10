@@ -9,7 +9,7 @@ const Home = () => {
     <>
       <HeadComponent />
 
-      <NavBar theme={{ background: "dark", foreground: "light" }} />
+      <NavBar theme={{ background: "darker", foreground: "lighter" }} />
       <Hero />
       <About />
       <Schedule />
