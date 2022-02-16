@@ -7,8 +7,9 @@ import Socials from "../Socials"
 
 const Footer = () => {
   return (
-    <footer className="flex w-full flex-col justify-between space-y-10 bg-cream py-10 px-col-all lg:flex-row lg:-space-y-0">
+    <footer className="flex w-full flex-col justify-between space-y-10 bg-light py-10 px-col-all lg:flex-row lg:-space-y-0">
       <MailingList />
+
       <div className="flex flex-col space-y-6">
         <h4 className="font-serif text-xl font-bold lg:text-2xl">
           Find me here:

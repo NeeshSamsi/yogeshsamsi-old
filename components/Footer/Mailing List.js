@@ -4,7 +4,7 @@ import TextInput from "../TextInput"
 
 const MailingList = () => {
   return (
-    <div className="flex max-w-sm flex-col justify-between space-y-6 rounded-xl border border-dark bg-light p-6 lg:max-w-none lg:space-y-0">
+    <div className="flex max-w-sm flex-col justify-between space-y-6 rounded-xl border border-dark bg-lighter p-6 lg:max-w-none lg:space-y-0">
       <h4 className="font-serif text-xl font-bold lg:text-2xl">
         Join our Mailing List
       </h4>
