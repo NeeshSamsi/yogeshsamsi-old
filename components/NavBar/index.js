@@ -30,7 +30,7 @@ const NavBar = ({ theme }) => {
 
   return (
     <nav
-      className={`sticky top-0 left-0 ${twDesktopNavBG} w-full py-4 px-col-all md:py-6 ${twDesktopNavFG}  z-50 lg:text-lg 2xl:text-xl`}
+      className={`sticky top-0 left-0 ${twDesktopNavBG} w-full py-4 px-col-all md:py-6 ${twDesktopNavFG} z-50 lg:text-lg 2xl:text-xl`}
     >
       {/* inner nav container */}
       <div className=" flex items-center justify-between">
@@ -90,7 +90,7 @@ const NavBar = ({ theme }) => {
       <div
         className={`${
           isHamburgerOpen ? "block" : "hidden"
-        } mx-auto flex flex-col space-y-6 py-10 text-lg md:hidden`}
+        } mx-auto flex h-screen flex-col space-y-6 py-10 text-lg md:hidden`}
       >
         {/* mobile links */}
         <div className="flex flex-col space-y-6">
