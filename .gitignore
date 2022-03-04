@@ -29,6 +29,8 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+# google service account credentials
+/google
 
 # vercel
 .vercel
