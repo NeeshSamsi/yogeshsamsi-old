@@ -1,29 +1,38 @@
-import Image from "next/image"
+import dynamic from "next/dynamic"
 
-import HeroImage from "../../assets/home/hero.jpg"
-import HeroImageMob from "../../assets/home/hero-mob.jpg"
+import RightArrow from "../../components/Icons/RightArrow"
+import Chat from "../../components/Icons/Chat"
+// import BGImage from "../../components/BGImage"
+const BGImage = dynamic(() => import("../../components/BGImage"), {
+  ssr: false,
+})
 
 const Hero = () => {
   return (
-    <>
-      <div className="w-screen">
-        <Image
-          src={HeroImage}
-          alt="Background image of Pandit Yogesh Samsi"
-          className="z-0 h-full w-full object-cover"
-        />
-      </div>
-      <main className="relative px-col-main">
-        {/* <div className="z-10">
-        <h1 className="text-light font-serif font-bold text-7xl">Yogesh Samsi</h1>
-        <div>
-          <div>
-            <a href=""></a>
+    <div className="relative">
+      <BGImage
+        breakpoint={1024}
+        desktopSrc="/img/home/hero.jpg"
+        mobileSrc="/img/home/hero-mobile.jpg"
+      />
+      <main className="absolute top-0 left-0 mx-auto h-screen w-full lg:mx-0 lg:flex lg:items-center lg:px-col-main">
+        <div className="mx-auto mt-16 flex max-w-2xl flex-col space-y-10 xs:space-y-10 sm:space-y-12 md:space-y-14 lg:space-y-20">
+          <h1 className="text-center font-serif text-5xl font-bold text-light md:text-7xl lg:text-left 2xl:text-8xl">
+            Yogesh Samsi
+          </h1>
+          <div className="flex w-full flex-col items-center justify-center xs:space-x-2 sm:flex-row sm:space-x-6 xl:text-xl 2xl:text-2xl">
+            <button className="flex items-center space-x-4 rounded-md bg-light p-4 text-sm font-semibold uppercase text-darker xs:p-2 sm:p-2 md:p-3 lg:p-4 lg:text-base xl:p-4 2xl:p-5">
+              <span>Upcoming Events</span>
+              <RightArrow foreground="#362009" />
+            </button>
+            <button className="flex items-center space-x-4 rounded-md p-4 font-semibold uppercase text-light">
+              <span>Contact</span>
+              <Chat foreground="#E0B385" />
+            </button>
           </div>
         </div>
-      </div> */}
       </main>
-    </>
+    </div>
   )
 }
 
