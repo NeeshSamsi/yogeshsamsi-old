@@ -13,7 +13,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ["Montserrat", "sans-serif"],
-      serif: ["Merriweather", "serif"],
+      serif: ["RecklessNeue", "serif"],
     },
     extend: {
       colors: {
