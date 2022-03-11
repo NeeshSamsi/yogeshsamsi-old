@@ -11,38 +11,36 @@ const Footer = () => {
       <MailingList />
 
       <div className="flex flex-col space-y-6">
-        <h4 className="font-serif text-xl font-bold lg:text-2xl">
+        <h4 className="font-serif text-2xl font-bold lg:text-2xl">
           Find me here:
         </h4>
         <div className="flex space-x-4">
-          <Socials background="none" foreground="#222222" />
+          <Socials background="none" foreground="#362009" />
         </div>
         <a
-          className="text-base underline lg:text-lg"
+          className="text-base font-medium underline lg:text-lg"
           href="mailto:yogeshsamsiofficial@gmail.com"
         >
           yogeshsamsiofficial@gmail.com
         </a>
       </div>
 
-      <div className="flex flex-col space-y-4 text-base underline lg:text-lg">
+      <div className="flex flex-col space-y-4 text-base lg:text-lg">
+        <span className="block font-serif text-2xl font-bold">Navigation:</span>
         <Link href="/">
-          <a className="block">Home</a>
+          <a className="block underline">Home</a>
+        </Link>
+        <Link href="/about">
+          <a className="block underline">About</a>
+        </Link>
+        <Link href="/gallery">
+          <a className="block underline">Gallery</a>
         </Link>
         <Link href="/">
-          <a className="block">About</a>
+          <a className="block underline">SaathSangath</a>
         </Link>
-        <Link href="/">
-          <a className="block">Gallery</a>
-        </Link>
-        <Link href="/">
-          <a className="block">Schedule</a>
-        </Link>
-        <Link href="/">
-          <a className="block">SaathSangath</a>
-        </Link>
-        <Link href="/">
-          <a className="block">Contact</a>
+        <Link href="/contact">
+          <a className="block underline">Contact</a>
         </Link>
       </div>
     </footer>
