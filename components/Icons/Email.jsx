@@ -14,3 +14,5 @@ const Email = ({ background, foreground }) => {
     </svg>
   )
 }
+
+export default Email

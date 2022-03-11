@@ -14,3 +14,5 @@ const User = ({ background, foreground }) => {
     </svg>
   )
 }
+
+export default User
